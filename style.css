@@ -1,0 +1,47 @@
+.deck{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    border: solid black 7px;
+    border-radius: 5%;
+}
+
+.card{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+}
+
+.card.active { 
+    background-color: blue;
+}
+
+.card.active p {
+    visibility: hidden;
+}
+
+.card.active.in-play {
+    visibility: visible;
+    background-color: red;
+}
+
+.card.active.in-play p {
+    visibility: visible;
+    background-color: red;
+    align-content: center;
+}
+
+.card.matched{
+    visibility: visible;
+    background-color: red;
+}
+
+.card.matched p{
+    visibility: visible;
+    background-color: red;
+}
