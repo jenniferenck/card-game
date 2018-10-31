@@ -1,13 +1,26 @@
 const card = document.getElementsByClassName('card');
 // card values: 
 const values = [1, 1, 2, 2, 3, 3];
+shuffleArray(values);
 
 // scramble cards each page refresh
+function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+    } 
+}
+console.log(values); // test to make sure shuffle worked
 
-// assign values --- will later need to scramble values
+// assign values & text 
+let textValue = document.getElementsByClassName('text');
 for (let j=0; j<values.length; j++){
     card[j].value = values[j];
-    console.log(card[j].value);
+    textValue[j].innerText = values[j];
+    // console.log(card[j].value);
+    console.log(textValue[j]);
 }
 
 let flippedValues = []; // stores element values to compare for match
@@ -21,6 +34,7 @@ let pairsMatched = 0; // KEEP track of number to reach for game to finish
             if (!card[i].classList.contains('in-play') && !card[i].classList.contains('matched') && turnCounter < 2) {   
                 
                 card[i].classList.add('in-play'); // change class to 'in-play'
+                console.log(card[i].value);
                 removeClick(card[i], clickFunction) // removes clickability of same card...
                 flippedValues.push(card[i]);
                     
