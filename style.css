@@ -10,18 +10,9 @@ header h1 {
     display: inline-flex;
     flex-wrap: wrap;
     width: 650px;
-    height: 650px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.wrapper{
-    display: relative;
-    align-content: center;
-    /*left: 8%;*/
     -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,36 +25,37 @@ header h1 {
     align-items: center;
     margin: 1%;
     height: 125px;
-    width: 125px;
+    width: calc(25% - 2%);
     cursor: pointer;
 }
 
-section .wrapper{
-    margin: 0px;
-}
+/* SCORE PANEL */
 
 .score-panel{
-    display: block;
     background-color: aquamarine;
     height: 50px;
     margin-bottom: 4px;
+    position: relative;
 }
 
 .score-panel div{
-    position: relative;
     display: inline-flex;
     left: 33%;
     top: 7px;
 }
 
-.button{
-    right: 50px;
-    margin-left: 2%;
+.score-panel div.button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .card.active { 
     background-color: blue;
 }
+
+/* CARD STATES */
 
 .card.active p {
     position: relative;
