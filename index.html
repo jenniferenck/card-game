@@ -9,42 +9,62 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-    <header class="success">
-        <h1 col-12>Let's play cards</h1>
+    <header>
+        <h1 class="container justify-content-center">Let's play cards</h1>
     </header>
 
     <section class='score-panel col-12'>
         <div class='score-card'>Your Score: </div>
         <div class='score-card' id="score">0</div>
-        
+        <div class='button'>
+            <form  action="./index.html">
+                <button class="btn btn-primary">Start New Game</button>
+            </form>
+        </div>
     </section>
 
-    <section>
-            <ul class='deck' id='card-deck'>
+    <section class='container justify-contents-center wrapper col-10'>
+            <ul class='deck  justify-content-center' id='card-deck'>
                     <li class='card active text-white bg-primary'>
-                        <p class="text">I'm a unicorn</p>
+                        <p class="text"></p>
                     </li>
                     <li class='card active text-white bg-primary'>
-                        <p class="text">I'm a unicorn</p>
+                        <p class="text"></p>
                     </li>
                     <li class='card active text-white bg-primary'>
-                        <p class="text">I'm a turtle</p>
+                        <p class="text"></p>
                     </li>
                     <li class='card active text-white bg-primary'>
-                        <p class="text">I'm a turtle</p>
+                        <p class="text"></p>
                     </li>
                     <li class='card active text-white bg-primary'>
-                        <p class="text">I am the backside value</p>
+                        <p class="text"></p>
                     </li>
                     <li class='card active text-white bg-primary'>
-                        <p class="text">I am the backside value</p>
-                    </li>
+                        <p class="text"></p>
+                    </li> 
+                    <li class='card active text-white bg-primary'>
+                            <p class="text"></p>
+                        </li>
+                        <li class='card active text-white bg-primary'>
+                            <p class="text"></p>
+                        </li>
+                        <li class='card active text-white bg-primary'>
+                            <p class="text"></p>
+                        </li>
+                        <li class='card active text-white bg-primary'>
+                            <p class="text"></p>
+                        </li>
+                        <li class='card active text-white bg-primary'>
+                            <p class="text"></p>
+                        </li>
+                        <li class='card active text-white bg-primary'>
+                            <p class="text"></p>
+                        </li>
                 </ul>
     </section>
 
-    <form action="./index.html">
-        <button class="btn btn-primary">Start New Game</button>
-    </form>
+
 
     <script src="app.js"></script>
 </body>
