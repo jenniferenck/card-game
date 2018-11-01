@@ -1,6 +1,6 @@
 const card = document.getElementsByClassName('card');
 // card values: 
-const values = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6];
+const values = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8];
 shuffleArray(values);
 
 // scramble cards each page refresh

@@ -68,7 +68,9 @@ section .wrapper{
 }
 
 .card.active p {
+    position: relative;
     visibility: hidden;
+    top: 39%;
 }
 
 .card.active.in-play {
@@ -85,9 +87,12 @@ section .wrapper{
 .card.matched{
     visibility: visible;
     background-color: red;
+
 }
 
 .card.matched p{
+    position: relative;
+    top: 39%;
     visibility: visible;
     background-color: red;
 }
