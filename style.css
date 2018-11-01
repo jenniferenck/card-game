@@ -19,7 +19,6 @@ header h1 {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-
 .wrapper{
     display: relative;
     align-content: center;
