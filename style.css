@@ -60,31 +60,37 @@ header h1 {
 .card.active p {
     position: relative;
     visibility: hidden;
-    top: 39%;
+    top: 30%;
+
 }
 
 .card.active.in-play {
     visibility: visible;
     background-color: red;
+    font-size: 2rem; 
 }
 
 .card.active.in-play p {
     visibility: visible;
     background-color: red;
     align-content: center;
+    padding-right: .5em;
+    padding-left: .5em;
 }
 
 .card.matched{
     visibility: visible;
     background-color: red;
-
+    font-size: 2rem;
 }
 
 .card.matched p{
     position: relative;
-    top: 39%;
+    top: 30%;
     visibility: visible;
     background-color: red;
+    padding-right: .5em;
+    padding-left: .5em;
 }
 
 
